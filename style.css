@@ -329,13 +329,53 @@ ul a:hover{
     color: #e91e63;
     transform: translateY(-3px);
 }
-
+.sideMenu{
+    background-color: #f00004;
+    color: white;
+    display: none;
+}
+.burger-nav{
+    display: none;
+}
 .room img{
     object-fit: cover;
 }
 @media (max-width: 768px) {
     .heroTitle {
         font-size: 3rem;
+    }
+    .burger-nav{
+        display: block;
+        background-color: white;
+        border: none;
+        background-image: url("menu_7588931.png");
+        background-position: center;
+        background-size: cover;
+        margin-left: 30px;
+        height: 40px;
+        width: 40px;
+    }
+    header{
+        height: 15vh;
+    }
+    .sideMenuShow{
+        display:flex;
+        background-color: #f00004;
+        flex-direction: column;
+        gap: 50px;
+        width: 40%;
+        height: 100vh;
+        position: sticky;
+        top: 16vh;
+    }
+    .sideMenuShow a{
+        width: 100%;
+        padding: 5px;
+        margin: 5px;
+        color: white;
+    }
+    .sideMenuShow a:visited, .sideMenuShow a:link, .sideMenuShow a:hover{
+        background-color: transparent;
     }
     .galeryPhotos{
         background-size: cover;
@@ -345,6 +385,11 @@ ul a:hover{
     }
     .heroDescription {
         font-size: 1rem;
+    }
+    .mapContainer{
+        width: 100%;
+        margin: 0;
+        
     }
     .bookingButton {
         margin: 0;
@@ -379,6 +424,10 @@ ul a:hover{
     .roomPhotos{
         width: 90%;
         margin-left: 10%;
+    }
+    header nav{
+        display: none;
+
     }
 }
 @media (min-width:768px) {
