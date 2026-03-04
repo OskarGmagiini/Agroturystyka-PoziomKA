@@ -6,17 +6,17 @@
 }
 
 @keyframes slideBg {
-    0%    { background-image: url('photo2.jpg');            background-size: 1024px 769px;}
-    10%    { background-image: url('zdjecieJezioro3.jpg');  background-size: 1024px 769px;}
-    20%    { background-image: url('photo4.jpg');           background-size: 1024px 769px;}
-    30%    { background-image: url('photo5.jpg');           background-size: 1024px 769px;}
-    40%    { background-image: url('zdjecieJezioro.jpg');   background-size: 1024px 769px;}
-    50%    {background-image: url('zdjecieJezioro2.jpg');   background-size: 1024px 769px;}
-    60%    {background-image: url('zdjecieJezioro3.jpg');   background-size: 1024px 769px;}
-    70%    {background-image: url('zdjecieJezioro2.jpg');   background-size: 1024px 769px;}
-    80%    {background-image: url('budynek.jpg');           background-size: 1024px 769px;}
-    90%    {background-image: url('photo1.jpg');            background-size: 1024px 769px;}
-    100%    {background-image: url('photo2.jpg');           background-size: 1024px 769px;}
+    0%     { background-image: url('photo2.jpg');           }
+    10%    { background-image: url('zdjecieJezioro3.jpg');  }
+    20%    { background-image: url('photo4.jpg');           }
+    30%    { background-image: url('photo5.jpg');           }
+    40%    { background-image: url('zdjecieJezioro.jpg');   }
+    50%    {background-image: url('zdjecieJezioro2.jpg');   }
+    60%    {background-image: url('zdjecieJezioro3.jpg');   }
+    70%    {background-image: url('zdjecieJezioro2.jpg');   }
+    80%    {background-image: url('budynek.jpg');           }
+    90%    {background-image: url("photo5.jpg");            }
+    100%   {background-image: url('photo2.jpg');            }    
 
 
     }
@@ -37,15 +37,15 @@ header{
 }
 footer{
     width: 100%;
-    height: 20vh;
-    background-color: #e91e63;
+    height: 100%;
+    background-color: #ff0004;
     color: white;
 }
 footer p{
     margin-left: 20px;
 }
 td{
-    text-align: center;
+    text-align: left;
 }
 .logo{
     margin: 0;
@@ -54,10 +54,10 @@ td{
     margin-bottom: 3vh;
     font-size: 5vh;
     margin-left: 20px;
-    color: #e91e63;
+    color: #ff0004;
 }
 a:visited, a:link{
-    color: #F06292;
+    color: #ff0004;
     text-decoration: none;
 }
 nav a{  
@@ -69,7 +69,7 @@ nav a{
     text-align: center;
 }
 a:hover, a:active{
-    background-color: #F06292;
+    background-color: #ff0004;
     color: white;
     transition: 0.3s;
 }
@@ -87,7 +87,7 @@ section{
     scroll-behavior: smooth;
 }
 .aboutUsContent{
-    border-left: 3px black solid;
+    border-left: 3px #ff0004 solid;
     padding-left:10px;
 }
 #heroSection{
@@ -98,7 +98,7 @@ section{
     justify-content: center;
     background-image: url('budynek.jpg');
     /* animation: 30s slideBg ease-in-out infinite both; */
-    background-color: #F06292;
+    background-color: #ff0004;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -129,6 +129,18 @@ section{
     height: 80vh;
     animation: 30s slideBg ease-in-out infinite both;
     margin-bottom: 5%;
+}
+#contact{
+    text-align: center;
+    display: flex;
+    gap: 20%;
+    background-color: #f00004;
+}
+#contact a{
+    width: 20%;
+}
+#contact a:hover{
+    background-color: transparent;
 }
 .heroContent {
     position: relative;
@@ -174,15 +186,15 @@ section{
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 .bookingLink{
-    text-decoration: underline #e91e63;
+    text-decoration: underline #ff0004;
 }
 .bookingLink:hover{
     background-color: white;
-    color: #e91e63;
+    color: #ff0004;
 }
 .bookingButton {
     display: inline-block;
-    background-color: #e91e63;
+    background-color: #ff0004;
     color: white;
     padding: 18px 40px;
     width: 30%;
@@ -209,13 +221,13 @@ section{
     border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     margin-bottom: 20px;
-    width:90%;
+    width: 90%;
 }
 .room::before{
     content:"";
     display:block;
     height:4px;
-    background:#e91e63;
+    background:#ff0004;
     border-radius:16px 16px 0 0;
 }
 #rooms{
@@ -229,10 +241,9 @@ section{
         text-decoration: none;
     }
     .bookingButton:hover {
-        background-color: #e91e63;
+        background-color: #ff0004;
         transform: translateY(-3px);
     }
-    
     .bookingButton:active {
         transform: translateY(-1px);
     }
@@ -246,6 +257,7 @@ section{
     margin-left: 15%;
     margin-right: 15%;
     scroll-behavior: smooth;
+
 }
 #aboutUs, #rooms, #atractions, #price{
     min-height: 50vh;
@@ -278,7 +290,7 @@ section{
     padding: 15px;
   margin-bottom: 5px;
   background: #F06292;
-  border: 1px solid #e91e63;
+  border: 1px solid #ff0004;
 }
 .room-content img{
     width: 600px;
@@ -321,10 +333,12 @@ ul a:hover{
 .room img{
     object-fit: cover;
 }
-
 @media (max-width: 768px) {
     .heroTitle {
         font-size: 3rem;
+    }
+    .galeryPhotos{
+        background-size: cover;
     }
     .heroSubtitle {
         font-size: 1.2rem;
@@ -369,5 +383,4 @@ ul a:hover{
 td a{
     padding-left: 10px;
     padding-right: 10px;
-
 }
