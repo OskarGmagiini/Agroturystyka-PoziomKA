@@ -359,6 +359,13 @@ ul a:hover{
     .splitTable{
         display: block;
     }
+    #contact{
+        flex-direction: column;
+        gap: 10px;
+    }
+    #contact a{
+        width: 100%;
+    }
     ul{
         width: 100%;
     }
