@@ -361,7 +361,7 @@ ul a:hover{
     }
     #contact{
         flex-direction: column;
-        gap: 10px;
+        gap: 40px;
     }
     #contact a{
         width: 100%;
