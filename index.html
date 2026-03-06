@@ -7,83 +7,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agroturystyka PoziomKA – Jaszczurowa | Jezioro Mucharskie</title>
     <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
         <a href="#heroSection">
-            <h1 class="logo" class="roboto">PoziomKA</h1>
+            <h1 class="logo roboto">PoziomKA</h1>
         </a>
-        <nav>
+        <nav class="mainNav">
             <a href="#aboutUs">O nas</a>
-            <a href="#galery">Galeria</a>
+            <a href="#gallery">Galeria</a>
             <a href="#rooms">Pokoje</a>
-            <a href="#atractions">Atrakcje</a>
+            <a href="#attractions">Atrakcje</a>
+            <a href="#contact">Kontakt</a>
             <a href="#map">Dojazd</a>
         </nav>
-        <button class="burger-nav">
+        <button class="burger-nav" aria-label="Menu">
         </button>
         <nav class="sideMenu">
-                <a href="#aboutUs" class="sideMenuLink">O nas</a>
-                <a href="#galery" class="sideMenuLink">Galeria</a>
-                <a href="#rooms" class="sideMenuLink">Pokoje</a>
-                <a href="#atractions" class="sideMenuLink">Atrakcje</a>
-                <a href="#map" class="sideMenuLink">Dojazd</a>
+            <a href="#aboutUs" class="sideMenuLink">O nas</a>
+            <a href="#gallery" class="sideMenuLink">Galeria</a>
+            <a href="#rooms" class="sideMenuLink">Pokoje</a>
+            <a href="#attractions" class="sideMenuLink">Atrakcje</a>
+            <a href="#contact" class="sideMenuLink">Kontakt</a>
+            <a href="#map" class="sideMenuLink">Dojazd</a>
         </nav>
-        </header>
+    </header>
 
     <main>
         <section id="heroSection">
             <div class="heroContent">
                 <h2 class="heroTitle">Witaj w <strong>PoziomKA</strong></h2>
                 <p class="heroSubtitle">Odkryj spokój i urok polskiej wsi w naszym gospodarstwie agroturystycznym!</p>
-                <a href="https://www.booking.com/hotel/pl/poziomka-mucharz.pl.html?chal_t=1771926259238&force_referer=https%3A%2F%2Fwww.google.com%2F#availability" target="_blank" class="bookingButton">Zarezerwuj</a>
+                <a href="#contact" class="bookingButton">Zarezerwuj</a>
             </div>
         </section>
+        
         <section id="aboutUs">
-            <div class="aboutUsContent">
+            <div class="contentWrapper">
                 <h2>O nas</h2>
-                <p><strong>Agroturystyka Poziomka</strong> to kameralne miejsce wypoczynku położone w malowniczej miejscowości Jaszczurowa, w otoczeniu natury i górskich krajobrazów.
-                    <br> Oferujemy przytulne pokoje oraz spokojną, rodzinną atmosferę sprzyjającą prawdziwemu <strong>odpoczynkowi</strong>. </p>
-<br>
-<p><strong>Bliskość lasów</strong>, szlaków spacerowych oraz <strong>Jeziora Mucharskiego</strong> sprawia, że to <strong>idealne</strong> miejsce zarówno na weekendowy wypad, jak i dłuższy urlop z dala od zgiełku miasta.</p>
-<br>
-<p>Zapraszamy do miejsca, gdzie cisza, świeże powietrze i gościnność tworzą <strong>wyjątkowy</strong> klimat wypoczynku.</p>
+                <p><strong>Agroturystyka Poziomka</strong> to kaminalne miejsce wypoczynku położone w malowniczej miejscowości Jaszczurowa, w otoczeniu natury i górskich krajobrazów.
+                    Oferujemy przytulne pokoje oraz spokojną, rodzinną atmosferę sprzyjającą prawdziwemu <strong>odpoczynkowi</strong>.</p>
+                <p><strong>Bliskość lasów</strong>, szlaków spacerowych oraz <strong>Jeziora Mucharskiego</strong> sprawia, że to <strong>idealne</strong> miejsce zarówno na weekendowy wypad, jak i dłuższy urlop z dala od zgiełku miasta.</p>
+                <p>Zapraszamy do miejsca, gdzie cisza, świeże powietrze i gościnność tworzą <strong>wyjątkowy</strong> klimat wypoczynku.</p>
             </div>
         </section>
-        <section id="galery">
-            <h2> Galeria</h2>
-            <div class="galeryPhotos"></div>
-        </section>
-        <section id="rooms">
-                <div class="roomsContent">
-                    <h2>Pokoje</h2>
-                    <h4>Wygoda, spokój i domowa atmosfera w jednym miejscu.</h4>
-                    <p>Oferujemy pokoje od jednoosobowego do pięcioosobowych</p>
-                    <div class="roomPhotos">
-                        <h3>Najpopularniejsze pokoje</h3>
-                        <div class="room"><h3>pokój 2 osobowy</h3>
-                            <div class="card">
-                            </div>
-                        </div>
-                        <div class="room"><h3>pokój 3 osobowy</h3>
-                            <div class="card">
-                            </div>
-                        </div>
-                        <div class="room"><h3>pokój 4 osobowy</h3>
-                            <div class="card">
-                            </div>
-                        </div>
-                        <p>Pełna dostępność i lista pokoi <a target="_blank" href="https://www.booking.com/hotel/pl/poziomka-mucharz.pl.html?chal_t=1771926259238&force_referer=https%3A%2F%2Fwww.google.com%2F" class="bookingLink"><strong>tutaj</strong></a></p>
-                    </div>
+        
+        <section id="gallery">
+            <div class="contentWrapper">
+                <h2>Galeria</h2>
+                <div class="galleryContainer">
+                    <div class="galleryPhoto" style="background-image: url('photo2.jpg')"></div>
+                    <div class="galleryPhoto" style="background-image: url('zdjecieJezioro3.jpg')"></div>
+                    <div class="galleryPhoto" style="background-image: url('photo4.jpg')"></div>
+                    <div class="galleryPhoto" style="background-image: url('photo5.jpg')"></div>
+                    <div class="galleryPhoto" style="background-image: url('zdjecieJezioro.jpg')"></div>
+                    <div class="galleryPhoto" style="background-image: url('zdjecieJezioro2.jpg')"></div>
                 </div>
+            </div>
         </section>
-        <section id="atractions">
-                <div class="atractionsContent">
-                    <h2>Atrakcje</h2>
-                    <div class="spitTable">
+        
+        <section id="rooms">
+            <div class="contentWrapper">
+                <h2>Pokoje</h2>
+                <p class="sectionSubtitle">Wygoda, spokój i domowa atmosfera w jednym miejscu.</p>
+                <p>Oferujemy pokoje od jednoosobowego do pięcioosobowych</p>
+                <div class="roomPhotos">
+                    <h3>Najpopularniejsze pokoje</h3>
+                    <div class="roomsGrid">
+                        <div class="room">
+                            <div class="roomImage" style="background-image: url('pokoj2osobowy.jpg')"></div>
+                            <h3>Pokój 2 osobowy</h3>
+                        </div>
+                        <div class="room">
+                            <div class="roomImage" style="background-image: url('pokoj3osobowy.jpg')"></div>
+                            <h3>Pokój 3 osobowy</h3>
+                        </div>
+                        <div class="room">
+                            <div class="roomImage" style="background-image: url('pokoj4osobowy.jpg')"></div>
+                            <h3>Pokój 4 osobowy</h3>
+                        </div>
+                    </div>
+                    <p class="bookingInfo">Pełna dostępność i lista pokoi <a target="_blank" href="https://www.booking.com/hotel/pl/poziomka-mucharz.pl.html?chal_t=1771926259238&force_referer=https%3A%2F%2Fwww.google.com%2F" class="bookingLink"><strong>tutaj</strong></a></p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="attractions">
+            <div class="contentWrapper">
+                <h2>Atrakcje</h2>
+                <div class="attractionsGrid">
+                    <div class="attractionsTable">
                         <table>
                             <tr>
                                 <th>Atrakcja</th>
@@ -110,14 +127,16 @@
                                 <td>43km</td>
                             </tr>
                             <tr>
-                                <td><a href="">Jezioro Mucharskie</a></td>
-                                <td>&Tilde;2km</td>
+                                <td><a href="#">Jezioro Mucharskie</a></td>
+                                <td>~2km</td>
                             </tr>
                         </table>
+                    </div>
+                    <div class="attractionsTable">
                         <table>
                             <tr>
                                 <th>Atrakcje na miejscu</th>
-                                <th>Atrakcje za opłatą</th>
+                                <th>Za opłatą</th>
                             </tr>
                             <tr>
                                 <td><img src="firewood (1).png" alt="ognisko ikona" width="25px" style="padding-right:5px">Ogniska</td>
@@ -132,27 +151,82 @@
                                 <td>Wycieczka po lokalnych zabytkach</td>
                             </tr>
                             <tr>
-                                <td><img src="slide (2).png" alt="" alt="zjeżdzalnia ikona" width="25px" style="padding-right:5px">Plac zabaw</td>
-
+                                <td><img src="slide.png" alt="zjeżdżalnia ikona" width="25px" style="padding-right:5px">Plac zabaw</td>
+                                <td>—</td>
                             </tr>
                         </table>
                     </div>
                 </div>
+            </div>
         </section>
+        
+        <!-- New Minimalistic Contact Section -->
+        <section id="contact">
+            <div class="contentWrapper">
+                <h2>Kontakt</h2>
+                <div class="contactCards">
+                    <a href="tel:+48606632595" class="contactCard">
+                        <div class="contactIcon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contactInfo">
+                            <span class="contactLabel">Telefon</span>
+                            <span class="contactValue">+48 606 632 595</span>
+                        </div>
+                    </a>
+                    <a href="mailto:agroturystyka.poziomka@wp.pl" class="contactCard">
+                        <div class="contactIcon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contactInfo">
+                            <span class="contactLabel">Email</span>
+                            <span class="contactValue email">agroturystyka.poziomka@wp.pl</span>
+                        </div>
+                    </a>
+                    <a href="https://www.booking.com/hotel/pl/poziomka-mucharz.pl.html?chal_t=1771926259238&force_referer=https%3A%2F%2Fwww.google.com%2F#tab-main" target="_blank" class="contactCard">
+                        <div class="contactIcon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <div class="contactInfo">
+                            <span class="contactLabel">Rezerwacje</span>
+                            <span class="contactValue">Booking.com</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
         <section id="map">
-            <div class="mapContainer"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2820.5308051098777!2d19.518305006750687!3d49.81532682503847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471687035b97e14f%3A0x69ddb076fe77aafe!2sAgroturystyka%20PoziomKA!5e1!3m2!1spl!2spl!4v1772611988628!5m2!1spl!2spl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <div class="mapContainer">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2820.5308051098777!2d19.518305006750687!3d49.81532682503847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471687035b97e14f%3A0x69ddb076fe77aafe!2sAgroturystyka%20PoziomKA!5e1!3m2!1spl!2spl!4v1772611988628!5m2!1spl!2spl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </section>
     </main>
+    
     <footer>
-        <p>Designed by <a href="https://www.freepik.com/" class="freepik">Freepik</a></p>
-        <p>Designed by <a href="https://www.flaticon.com/free-icons/kid-and-baby" title="kid and baby icons">Kid and baby icons created by Andrejs Kirma - Flaticon</a></p>
-        <p>Made by Oskar Gajda</p>
-        <p>&copy;2026 agroturystyka PoziomKA</p>
-        <div id="contact">
-            <a href="tel:+48 606 632 595">+48 606 632 595</a>
-            <a href="mailto:agroturystyka.poziomka@wp.pl">agroturystyka.poziomka@wp.pl</a></p>
-            <a href="https://www.booking.com/hotel/pl/poziomka-mucharz.pl.html?chal_t=1771926259238&force_referer=https%3A%2F%2Fwww.google.com%2F#tab-main">Booking.com</a>
+        <div class="footerContent">
+            <div class="footerContact">
+                <h3>Agroturystyka PoziomKA</h3>
+                <p>Jaszczurowa</p>
+                <p><a href="tel:+48606632595">+48 606 632 595</a></p>
+                <p><a href="mailto:agroturystyka.poziomka@wp.pl">agroturystyka.poziomka@wp.pl</a></p>
+            </div>
+            <div class="footerLinks">
+                <a href="#aboutUs">O nas</a>
+                <a href="#gallery">Galeria</a>
+                <a href="#rooms">Pokoje</a>
+                <a href="#attractions">Atrakcje</a>
+                <a href="#contact">Kontakt</a>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p>&copy; 2026 Agroturystyka PoziomKA | Made by Oskar Gajda</p>
+            <p>Designed by <a href="">Freepik</a></p>
+            <a href="https://www.flaticon.com/free-icons/kid-and-baby" title="kid and baby icons">Kid and baby icons created by Andrejs Kirma - Flaticon</a>
+        </div>
     </footer>
+    
     <script src="menu.js"></script>
 </body>
 </html>
+
